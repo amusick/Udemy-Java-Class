@@ -250,4 +250,35 @@ public class RequestInput {
 			}
 		}
 	}
+
+	/**
+	 * Static Helper Method which asks user specified question and as long as
+	 * they give a input will return a boolean type variable.
+	 *
+	 * @return Boolean value based on user input
+	 */
+	public static String getStringIgnoreCase(String question, String... words) {
+		while (true) {
+			// Declare Local Variables
+			boolean present = false;
+			// Get the character using alternative method to get a char
+			String input = RequestInput.getString(question);
+			// Iterate through the supplied chars and see if it is present
+			for (int i = 0; i < words.length; i++) {
+				if ((words[i].equalsIgnoreCase(input))) {
+					present = true;
+				}
+			}
+			// If present variable is set to true and it is a valid option
+			if (present == true) {
+				// return the character
+				return input;
+			} else {
+				// Give an error message
+				System.out.println("You have not entered a valid word (" + input + ").");
+				// Continue with next iteration
+				continue;
+			}
+		}
+	}
 }
