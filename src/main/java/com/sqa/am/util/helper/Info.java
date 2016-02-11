@@ -8,11 +8,9 @@
 package com.sqa.am.util.helper;
 
 /**
- * Info //ADDD (description of class)
- * <p>
- * //ADDD (description of core fields)
- * <p>
- * //ADDD (description of core methods)
+ * Info // Create a helper class to add to your framework which gives
+ * information on any class you create. The method signatures are below. Try to
+ * implement one at a time. Create a test case for each method.
  *
  * @author Musick, Annette
  * @version 1.0.0
