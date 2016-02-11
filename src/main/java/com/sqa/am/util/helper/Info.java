@@ -25,6 +25,11 @@ public class Info {
 	// Methods which call Object methods getClass().getSimpleName(), toString(),
 	// and in a readable form both to display and get String value of Object
 	public static void displayInfo(Object obj) {
+		System.out.println("This object is named: " + obj.getClass().getName());
+		System.out.println("The object is of type: " + obj.getClass().getSimpleName());
+		System.out.println("The number of modifiers are: " + obj.getClass().getModifiers());
+		System.out.println("The number of modifiers are: " + obj.getClass().getFields());
+		System.out.println("The methods are: " + obj.getClass().getDeclaredMethods());
 	}
 
 	public static void displayInfo(Object obj1, Object obj2, Object... objN) {
