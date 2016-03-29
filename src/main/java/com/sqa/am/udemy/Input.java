@@ -1,3 +1,4 @@
+package com.sqa.am.udemy;
 import java.util.Scanner;
 
 /**

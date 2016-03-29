@@ -1,12 +1,13 @@
+package com.sqa.am.udemy;
 /**
- * File Name: ForLoop.java<br>
+ * File Name: Application2.java<br>
  * Musick, Annette<br>
  * Java Boot Camp Exercise<br>
  * Instructor: Jean-francois Nepton<br>
  * Created: Mar 28, 2016
  */
 /**
- * ForLoop //ADDD (description of class)
+ * Application2 //ADDD (description of class)
  * <p>
  * //ADDD (description of core fields)
  * <p>
@@ -16,12 +17,14 @@
  * @version 1.0.0
  * @since 1.0
  */
-public class ForLoop {
+public class Application2 {
 
 	public static void main(String[] args) {
-		for (int i = 0; i < 5; i++) {
-			// System.out.println("Hello " + i);
-			System.out.printf("The value of i is: %d\n", i);
+		int value = 0;
+		boolean loop = value < 20;
+		while (value < 10) {
+			System.out.println("Hello" + value);
+			value = value + 1;
 		}
 	}
 }

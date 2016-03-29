@@ -1,3 +1,4 @@
+package com.sqa.am.udemy;
 public class Types {
 
 	public static void main(String[] args) {
