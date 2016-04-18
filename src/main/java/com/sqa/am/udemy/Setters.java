@@ -11,6 +11,8 @@ public class Setters {
 		sam.move("West", 12.2);
 		String greeting = "Hello there.";
 		sam.speak(greeting);
+		int value = 14;
+		sam.jump(value);
 	}
 }
 
