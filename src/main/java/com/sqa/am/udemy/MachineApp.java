@@ -1,33 +1,34 @@
-/**
- * File Name: MachineApp.java<br>
- * Musick, Annette<br>
- * Java Boot Camp Exercise<br>
- * Instructor: Jean-francois Nepton<br>
- * Created: Apr 18, 2016
- */
 package com.sqa.am.udemy;
 
 public class MachineApp {
 
 	public static void main(String[] args) {
 		Machine machine1 = new Machine();
+		Machine machine2 = new Machine("Bertie");
+		Machine machine3 = new Machine("Chalky", 7);
 	}
 }
 
-/**
- * MachineApp //ADDD (description of class)
- * <p>
- * //ADDD (description of core fields)
- * <p>
- * //ADDD (description of core methods)
- *
- * @author Musick, Annette
- * @version 1.0.0
- * @since 1.0
- */
 class Machine {
 
+	private String name;
+
+	private int code;
+
 	public Machine() {
-		System.out.println("Constructor Running");
+		this("Arnie", 0);
+		System.out.println("Constructor Running!");
+	}
+
+	public Machine(String name) {
+		this(name, 0);
+		System.out.println("Second constructor running!");
+		this.name = name;
+	}
+
+	public Machine(String name, int code) {
+		System.out.println("Third constructor running!");
+		this.name = name;
+		this.code = code;
 	}
 }
