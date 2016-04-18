@@ -1,3 +1,4 @@
+package com.sqa.am.udemy;
 public class getterSetter {
 
 	public static void main(String[] args) {
